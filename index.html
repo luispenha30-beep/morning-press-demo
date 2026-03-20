@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Morning Press | Auckland Modern Cafe</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed": "#101f0d",
+              "on-surface": "#1c1c18",
+              "background": "#fdf9f3",
+              "outline-variant": "#c4c8be",
+              "outline": "#747870",
+              "tertiary-container": "#af936d",
+              "surface": "#fdf9f3",
+              "error": "#ba1a1a",
+              "inverse-primary": "#eabda0",
+              "surface-dim": "#dddad4",
+              "surface-container": "#f1ede7",
+              "on-error-container": "#93000a",
+              "surface-container-low": "#f7f3ed",
+              "surface-variant": "#e6e2dc",
+              "on-primary-container": "#452a15",
+              "secondary-container": "#d2e5c8",
+              "on-primary": "#ffffff",
+              "on-primary-fixed": "#2d1604",
+              "inverse-surface": "#31302d",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed-dim": "#e1c299",
+              "surface-bright": "#fdf9f3",
+              "primary-fixed": "#ffdcc6",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#5f402a",
+              "secondary-fixed-dim": "#b9ccb0",
+              "secondary-fixed": "#d5e8cb",
+              "on-tertiary-fixed-variant": "#584324",
+              "primary-fixed-dim": "#eabda0",
+              "inverse-on-surface": "#f4f0ea",
+              "surface-container-high": "#ebe8e2",
+              "primary": "#79573f",
+              "error-container": "#ffdad6",
+              "on-secondary-fixed-variant": "#3b4b36",
+              "on-tertiary-fixed": "#281801",
+              "on-tertiary-container": "#3f2c0f",
+              "surface-tint": "#79573f",
+              "secondary": "#52634c",
+              "on-secondary": "#ffffff",
+              "primary-container": "#b88f75",
+              "tertiary": "#725a39",
+              "surface-container-highest": "#e6e2dc",
+              "on-surface-variant": "#444841",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-container": "#566750",
+              "on-background": "#1c1c18",
+              "tertiary-fixed": "#feddb3"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif", "serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #fdf9f3;
+        color: #1c1c18;
+      }
+      h1, h2, h3, .serif-font {
+        font-family: 'Noto Serif', serif;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .nav-glass {
+        background-color: rgba(253, 249, 243, 0.8);
+        backdrop-filter: blur(12px);
+      }
+      .stagger-grid > div:nth-child(even) {
+        margin-top: 2rem;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-md shadow-sm shadow-stone-900/5">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto w-full">
+<a class="text-2xl font-serif italic tracking-tight text-stone-900 dark:text-stone-50" href="#">
+                The Morning Press
+            </a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors font-label text-sm uppercase tracking-widest" href="#about">Our Story</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors font-label text-sm uppercase tracking-widest" href="#menu">Menu</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors font-label text-sm uppercase tracking-widest" href="#gallery">Gallery</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors font-label text-sm uppercase tracking-widest" href="#visit">Visit</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-md font-label text-xs uppercase tracking-widest hover:bg-primary-container transition-all duration-300 shadow-sm">
+                Reserve a Table
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-background/90 z-10"></div>
+<img alt="Warm sunlit cafe interior with wooden tables" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAcQylVcQ_skUpiId21ibWKX-0zGr6JFsGA5ThyM5_OxlTi_9gPB-wmUQzRKWO8AQpzYV3C8Nv7RseqwUbD03Rmeoc62gh9Nzn0qULUWjAQN2sLpl7y6DldGFRRudi_UUjMFDkD5sxTJkLOgtHUI6VEA5Afip68QhzCpIthfWiLs9tWAc_aJ0Vo2O8-ViydRAA6rgAD0_OCo_lZVubAvzZGyYLpJpKx8xJBlrLOhM7OP4vu4_pcVUJwhRF3qiLw74dcZls3IkOUek"/>
+</div>
+<div class="relative z-20 max-w-4xl px-8 text-center">
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-serif text-on-surface leading-tight mb-8">
+                Good coffee.<br/>Great food. <br/><span class="italic opacity-80">No rush.</span>
+</h1>
+<p class="text-lg md:text-xl font-body text-on-surface-variant max-w-2xl mx-auto mb-12 leading-relaxed">
+                An Auckland morning ritual. We slow down the pace so you can savor every locally-sourced bite and every perfectly pulled shot.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<a class="w-full sm:w-auto px-8 py-4 bg-primary text-on-primary rounded-md font-label text-sm uppercase tracking-widest transition-all hover:scale-105" href="#menu">
+                    See Our Menu
+                </a>
+<a class="w-full sm:w-auto px-8 py-4 bg-surface-container-highest text-primary rounded-md font-label text-sm uppercase tracking-widest transition-all hover:bg-surface-container-high" href="#visit">
+                    Plan Your Visit
+                </a>
+</div>
+</div>
+</header>
+<!-- About Section -->
+<section class="py-24 px-8 bg-surface-container-low" id="about">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2">
+<div class="relative group">
+<div class="absolute -inset-4 bg-secondary-container/30 rounded-xl transition-all group-hover:inset-0"></div>
+<img alt="Specialty coffee being poured in a slow motion stream" class="relative rounded-lg shadow-xl w-full aspect-[4/5] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs455NlPjtLlT7JjDbvIZ5Aphe0J9RktLtYWq_yxlgGrA9pUSoR6CJvBo6T2QpX4GYyWgG7HmVPrDG3YtsfFtYXxpDHrHXYclUvpEpKgsLxOoYbxpMkY2ZzhA8WK0vLlzf_nt5nhLafqmlFXUgoUUdkUfhxupoKi2gli4McZFi5HR6QTHsc9GIh0EEqddOBzJJbLXmbcHbuvq2IjZ84lw8zq-cg-vpKRnsvWfvJ0FeCfpRTLkhQGB2--xIywvZRLuJlFFfLXGK7Eo"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-8">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-secondary">Our Story</span>
+<h2 class="text-4xl md:text-5xl font-serif leading-tight">The Art of the Auckland Morning</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed font-body">
+                    Born from a passion for Ponsonby's vibrant morning culture, The Morning Press is more than a cafe—it's a sanctuary for the early risers and the slow-starters alike.
+                </p>
+<p class="text-lg text-on-surface-variant leading-relaxed font-body">
+                    We partner with local artisanal roasters and organic North Island farmers to bring you a menu that changes with the seasons. Every dish is a tribute to the landscape that surrounds us.
+                </p>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 text-primary font-medium hover:gap-4 transition-all" href="#">
+<span class="font-label uppercase text-sm tracking-widest">Read more about our partners</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Highlights -->
+<section class="py-24 px-8 bg-surface" id="menu">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-secondary">Curated Selections</span>
+<h2 class="text-4xl md:text-5xl font-serif mt-4">Morning Favorites</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12">
+<!-- Item 1: Avocado Toast -->
+<div class="group">
+<div class="overflow-hidden rounded-lg mb-6">
+<img alt="Artisan sourdough toast with smashed avocado and microgreens" class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_Aa9ewvG7QAu7oyInzZbB7cezx44neKUU-aLl6-xlTsAUWsvRePiLsx0OFstdSt4fkts16DH_BA8iSLu7VsRXf39wxjOyR4NxNXXvgwjBTUvFwybl_IxM_SffY4bbqWjjtfiIy2n_ZCt7pGRw8TYTixFKDR6PvJqoeXYfH4IZ1BaPWy__NxByD-xwjZX99eTBQ4jCoNHBQ0zRKTjOx0PHsV39YtCOamWZnI63JpGZZJnMnW03J-aps35yrdmtJ8HN5NVAngcuLIM"/>
+</div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="text-xl font-serif">Auckland Avocado Toast</h3>
+<span class="font-body text-sm text-primary">$19.5</span>
+</div>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed">
+                        Fermented sourdough, smashed organic avocado, heirloom tomatoes, and a dusting of local dukkah.
+                    </p>
+</div>
+<!-- Item 2: Honeycomb Pancakes -->
+<div class="group lg:translate-y-8">
+<div class="overflow-hidden rounded-lg mb-6">
+<img alt="Fluffy ricotta pancakes with fresh honeycomb and seasonal berries" class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=600&fit=crop&crop=center"/>
+</div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="text-xl font-serif">Honeycomb Pancakes</h3>
+<span class="font-body text-sm text-primary">$22.0</span>
+</div>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed">
+                        Fluffy ricotta pancakes, whipped vanilla bean butter, seasonal berries, and pure Waikato honeycomb.
+                    </p>
+</div>
+<!-- Item 3: Morning Benny -->
+<div class="group">
+<div class="overflow-hidden rounded-lg mb-6">
+<img alt="Creamy eggs benedict on toasted brioche with smoked salmon" class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9SN9nhyIGpSnl0M3OpwA4rsZByDlWZxm_1g2KTT9mwgVp3S4uxyZF_tlSdwRrmcFdSnBCLfHm-EXQ6UWXBGCCA8GXpBqTgp3Hzg0IZBkskxk4mIHRCt9qXsKqMkXHvi5fEqVu0HfaRfBQIe9o10nxKL5ZytMpqjZUcB8S_HWXinVrajhQtG7A7CkAceI6kSUtcd--IZ84M4pF85rARZ6uAQKFFT0vfAP9bx1Wg9QpxQefx5dlWzQRx3daGPhmhOK0ozdToNGm7UE"/>
+</div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="text-xl font-serif">The Morning Benny</h3>
+<span class="font-body text-sm text-primary">$24.0</span>
+</div>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed">
+                        Poached free-range eggs, house-made hollandaise, hot-smoked salmon, and wilted kale on brioche.
+                    </p>
+</div>
+<!-- Item 4: Botanical Acai -->
+<div class="group">
+<div class="overflow-hidden rounded-lg mb-6">
+<img alt="Superfood smoothie bowl with granola and edible flowers" class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY-JK16A9BmC_6S7g3pWvhSjc0amSsFc8JBu7NvKiFD534ObL8mLWacG0PJQNJZBlsneKIsX-VUgfOt8cv01koKQHD6XGKvsL4W4dPShEsp4TbKUXjK6LnF37sF2HGVf5Ot6o89obAsLvhW04SDkYwmztqBw9wGYx5kEmeIjUwKh6aL4WO-AGH0jS25rJ_4kTBBMDjso-_Hn8FPbH0C-Xsd2vJnHUtJXQ1DnWiJJVubklljBHLuTvKd-5u2dVr8bvsH3o78hES2qE"/>
+</div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="text-xl font-serif">Botanical Acai</h3>
+<span class="font-body text-sm text-primary">$18.0</span>
+</div>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed">
+                        Organic acai, house granola, coconut yogurt, activated nuts, and seasonal edible botanicals.
+                    </p>
+</div>
+<!-- Item 5: Harvest Bowl -->
+<div class="group lg:translate-y-8">
+<div class="overflow-hidden rounded-lg mb-6">
+<img alt="Hearty lunch bowl with roasted vegetables and quinoa" class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=600&fit=crop&crop=center"/>
+</div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="text-xl font-serif">Ponsonby Harvest Bowl</h3>
+<span class="font-body text-sm text-primary">$21.5</span>
+</div>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed">
+                        Roasted kumara, quinoa, miso-glazed cauliflower, pickled ginger, and a tahini lemon dressing.
+                    </p>
+</div>
+<!-- Item 6: Flat White -->
+<div class="group">
+<div class="overflow-hidden rounded-lg mb-6">
+<img alt="Perfectly poured flat white coffee in a ceramic cup" class="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&h=600&fit=crop&crop=center"/>
+</div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="text-xl font-serif">Signature Flat White</h3>
+<span class="font-body text-sm text-primary">$5.5</span>
+</div>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed">
+                        Our custom roast blend with silky, textured milk. The quintessential Auckland classic.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section (Asymmetric Layout) -->
+<section class="py-24 px-8 bg-surface-container" id="gallery">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-12 gap-6 stagger-grid">
+<div class="col-span-12 md:col-span-6 lg:col-span-4">
+<img alt="Interior seating with soft morning light" class="w-full aspect-[3/4] object-cover rounded shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFHLzwxDbRNm7Ey8GADbbPCg01LraPIGX23U_KEgQ1OX3v4ORCemFgDsi_ofTrltmkkr0pYoLwkx3wGbr7CPxWXl7tKhcOY7BlCC5yVx1lOGb9MwGOnLFlPsCCmu1NPpeRO5IzVs6wx2Tc6BQpv_e8C5ZUo3p28YRgAtsVbMdhQ-Au49M8Uop58o-keeSPzTfRTyBv7b0RD0hkIKp_6ExGFy9VXDZcBwJmDLjnO38iMdmt13uQkZ3Sfhxxf-o720gMOEq9sQL1FIY"/>
+</div>
+<div class="col-span-12 md:col-span-6 lg:col-span-8">
+<img alt="Coffee beans being roasted" class="w-full aspect-video object-cover rounded shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQSJtEqaonKWOt0-qV0AiHD9BWhQFfsrFgeB-VF1PsNUt_m7ok1EtOHdhfOkGLyEuQ3kSjh3zLu35yysmB5R2G9qS4cxERDzfkYD6kcUZ2nAJpKMiBxnIstlPXoQMo9CPsRpBdoDLjz3KFzbsrwCgM2pVjTC2HAGEh0FetuxuDrQU5RxRzJwiClIPx9t_mAbc02Gv76-roEBB7qfSVSD-zX0PLvODKXEaprZHs4IipDJLfgO7SV43Ev1URhaIjs87gVFdGHHEvX2w"/>
+</div>
+<div class="col-span-12 md:col-span-8 lg:col-span-7">
+<img alt="Barista preparing a pour-over coffee" class="w-full aspect-[16/9] object-cover rounded shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-6AQ3p0MsRYk505MqvTtLftRjViz3w1qScTBfBEuwFASWeD_aylKspSBnnrMGD19KbVynigJV98d2vf4xFRgOXsSmPNMUCn-sdWOiAGNdhs-Tocb_KoB5tXqDvOns15V9MHEa6-iCYB58CKxOyYbPVBS3FD2RWokOBWLrnBpHDpL_1YUhBfrDzVwpR50xiBQPLmVIKqfd3LQ5299ytZTj3APbzOD9skXaXxvgHT_xjgznMMMs34Hp6jBN7an4BGqSMxcg0Nw8x70"/>
+</div>
+<div class="col-span-12 md:col-span-4 lg:col-span-5">
+<img alt="Rustic breakfast table layout" class="w-full aspect-square object-cover rounded shadow-md" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=600&fit=crop&crop=center"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="p-8 bg-surface-container-low rounded-xl">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-serif italic text-lg mb-6 leading-relaxed">"The best flat white in Ponsonby, hands down. The atmosphere is so calming you'll want to stay for hours."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center font-bold text-secondary">S</div>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Sarah Jenkins</span>
+</div>
+</div>
+<div class="p-8 bg-surface-container-low rounded-xl">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-serif italic text-lg mb-6 leading-relaxed">"A true local gem. Their sourdough is life-changing and the staff treat you like old friends."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center font-bold text-secondary">M</div>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Marcus Thorne</span>
+</div>
+</div>
+<div class="p-8 bg-surface-container-low rounded-xl">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-serif italic text-lg mb-6 leading-relaxed">"Beautifully designed space and even more beautiful food. The pancakes are almost too pretty to eat."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center font-bold text-secondary">E</div>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Elena Rossi</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visit Us Section -->
+<section class="py-24 px-8 bg-surface-container-high" id="visit">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+<div class="space-y-12 py-8">
+<div>
+<span class="font-label text-xs uppercase tracking-[0.2em] text-secondary">Location &amp; Hours</span>
+<h2 class="text-4xl md:text-5xl font-serif mt-4">Join Us for Coffee</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
+<div class="space-y-4">
+<h4 class="font-label text-xs uppercase tracking-widest text-primary border-b border-outline-variant/30 pb-2">Opening Hours</h4>
+<ul class="space-y-2 font-body text-on-surface-variant">
+<li class="flex justify-between"><span>Mon - Fri</span> <span>7am - 3pm</span></li>
+<li class="flex justify-between"><span>Sat - Sun</span> <span>8am - 4pm</span></li>
+<li class="italic pt-2 text-sm">Kitchen closes 1 hour before</li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label text-xs uppercase tracking-widest text-primary border-b border-outline-variant/30 pb-2">Address</h4>
+<p class="font-body text-on-surface-variant">
+                            12 Ponsonby Road,<br/>
+                            Auckland 1011,<br/>
+                            New Zealand
+                        </p>
+<p class="font-body text-sm text-on-surface-variant pt-2">
+                            +64 9 123 4567<br/>
+                            hello@themorningpress.co.nz
+                        </p>
+</div>
+</div>
+<div class="pt-8">
+<button class="px-8 py-4 border border-primary text-primary hover:bg-primary hover:text-on-primary transition-all duration-300 font-label text-sm uppercase tracking-widest rounded-md">
+                        Get Directions
+                    </button>
+</div>
+</div>
+<div class="min-h-[400px] rounded-xl overflow-hidden shadow-lg relative">
+<img alt="Cafe exterior on a sunny Ponsonby street" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=800&h=600&fit=crop&crop=center"/>
+<!-- Overlay "Map" Aesthetic -->
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+<div class="absolute bottom-6 left-6 bg-surface p-4 rounded-lg shadow-xl max-w-[240px]">
+<div class="flex items-center gap-2 text-primary mb-1">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-label text-[10px] uppercase tracking-widest">Find Us Here</span>
+</div>
+<p class="font-serif text-sm">12 Ponsonby Road, Auckland</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 w-full py-12 px-8">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-8">
+<div class="text-center md:text-left">
+<a class="text-lg font-serif italic text-stone-800 dark:text-stone-200 block mb-2" href="#">The Morning Press</a>
+<p class="font-body text-stone-500 text-sm max-w-xs leading-relaxed">Crafting intentional mornings in the heart of Auckland since 2024.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-stone-500 hover:text-orange-800 transition-colors font-label text-xs uppercase tracking-widest" href="#">Instagram</a>
+<a class="text-stone-500 hover:text-orange-800 transition-colors font-label text-xs uppercase tracking-widest" href="#">Facebook</a>
+<a class="text-stone-500 hover:text-orange-800 transition-colors font-label text-xs uppercase tracking-widest" href="#">Newsletter</a>
+</div>
+<div class="text-center md:text-right font-sans text-sm tracking-wide uppercase text-stone-500 dark:text-stone-400">
+<p class="mb-2">&copy; 2024 The Morning Press Auckland.</p>
+<div class="flex gap-4 justify-center md:justify-end">
+<a class="hover:text-orange-800 transition-colors" href="#">Privacy</a>
+<a class="hover:text-orange-800 transition-colors" href="#">Terms</a>
+<a class="hover:text-orange-800 transition-colors" href="#">Careers</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
